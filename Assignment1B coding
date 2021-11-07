@@ -1,0 +1,37 @@
+package assignment1b;
+
+import java.util.Scanner;
+
+
+public class Assignmentb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//This is data type for this question
+		int year;
+		double interest;
+		double loan;
+		double interestprice;
+		double totalpay;
+		
+
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("Enter early interest rate:");
+		interest = scan.nextDouble();
+		
+		System.out.println("Enter number of year:");
+		year  = scan.nextInt();
+		
+		System.out.println("Enter the loan amount:");
+		loan  = scan.nextInt();
+		
+		interestprice = loan * 3.5/100;
+		totalpay = interestprice * 60;
+		System.out.println("The monthly payment is $" + interestprice);
+		System.out.println("Total payment is $" + totalpay);
+		
+		
+	}
+
+}
